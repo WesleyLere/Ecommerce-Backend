@@ -10,16 +10,18 @@ Product.belongsTo(Category, {
   foreignKey: 'catagory_id'
 })
 // Categories have many Products
-Category.belongsToMany(Product , {
-  foreignKey: 'product_id'
+Category.hasMany(Product , {
+  foreignKey: 'category_id'
 })
 // Products belongToMany Tags (through ProductTag)
-ProductTag.belongsToMany(Tag, {
-  foreignKey: 'tag_id'
+Product.belongsToMany(Tag, {
+  foreignKey: 'product_id',
+  through: ProductTag
 })
 // Tags belongToMany Products (through ProductTag)
-Tag.belongsToMany(ProductTag, {
-  foreignKey: 'prodcuct_id'
+Tag.belongsToMany(Product, {
+  foreignKey: 'tag_id',
+through: ProductTag
 })
 module.exports = {
   Product,
