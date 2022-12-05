@@ -8,31 +8,16 @@
   
   - [Description](#Description)
   - [Installation](#Installation)
-  - [Usage](#Usage)
   - [License](#license)
-  - [Contributing](#Contribution)
-  - [Tests](#testing)
   - [Credits](#credits)
   - [Contact-Info](#contact-info)
 
   ## Description
 Its an ecommerce backed using express.js, Mysql2, and sequalize.
 
-  ## Installation
-
-  
-  ## Usage
-
-  
   ## License
 [mit](https://choosealicense.com/licenses/mit/)
 
-  ## Contribution
-
-  
-  ## Testing
-
-  
   ### Credits
 [WesleyLere](https://github.com/WesleyLere)
 
